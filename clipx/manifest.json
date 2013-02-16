@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Clipx",
-  "description": "A browser extension – able to store and manage various types of resources (fragments of Web content like links, images, videos etc.) by permitting users to share these among their friends on popular social networks.",
+  "description": "A browser extension – able to store and manage various types of resources by permitting users to share on social networks",
   "version": "1.0",
   "icons": {
     "16": "icons/icon16.png",
