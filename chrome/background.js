@@ -5,6 +5,7 @@ function onClickHandler(data, tab) {
   if (data.menuItemId == 'clipxadd') {
   		var id = parseInt(new Date().getTime());
   		var item = {};
+      item.id = id;
   		if (typeof(data.mediaType) != "undefined"){
   			switch (data.mediaType){
   				case "image" : {
@@ -32,8 +33,11 @@ function onClickHandler(data, tab) {
   		}
  	 	if(typeof(item.type) != "undefined"){
  	 		nrItems++;
- 	 		chrome.browserAction.setBadgeText({'text' : nrItems.toString()});
- 	 		window.localStorage.setItem(id,JSON.stringify(item));
+ 	 		chrome.browserAction.setBadgeText({'text' : nrItems.toString()});  
+      chrome.tabs.captureVisibleTab(null,{"format":"png"}, function(imgUrl) {
+        item.thumbnail = imgUrl;
+        window.localStorage.setItem(id,JSON.stringify(item));
+      });  
  	 	}
   }
 };
@@ -41,6 +45,7 @@ function onClickHandler(data, tab) {
 function onClickedIconHandler(){
 	nrItems = 0;
 	chrome.browserAction.setBadgeText({'text' : ''});
+  chrome.tabs.create({url : 'background.html'});
 }
 
 chrome.browserAction.setIcon({'path' : 'icons/icon16.png'},function(){});

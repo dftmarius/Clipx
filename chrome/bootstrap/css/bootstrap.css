@@ -6310,3 +6310,29 @@ button.close {
     overflow: visible !important;
   }
 }
+.share{
+  position: relative;
+  left: 10px;
+}
+.myodds{
+  margin-top: 10px;
+}
+.myodds:nth-child(odd)
+{
+
+  background: #f5f5f5;
+}
+.under
+{
+position:absolute;
+left:0px;
+top:0px;
+z-index:-1;
+}
+.over
+{
+position:absolute;
+left:40px;
+top:10px;
+z-index:-1;
+}

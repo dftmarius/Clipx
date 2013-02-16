@@ -16,8 +16,13 @@
   },
   "permissions": [
     "contextMenus",
-    "storage"
+    "storage",
+    "tabs",
+    "<all_urls>",
+    "unlimitedStorage"
   ],
+  "content_security_policy": "script-src 'self' https://platform.twitter.com https://connect.facebook.net https://apis.google.com; object-src 'self'",
+
   "background": {
     "scripts": ["background.js"]
   }

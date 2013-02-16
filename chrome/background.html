@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Clipx Overview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Clipx">
     <meta name="author" content="Marius Doroftei">
@@ -27,10 +27,15 @@
         }
       }
     </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="gplus-widget.js">
+    {"parsetags": "explicit"}
+    </script>
+    <script type="text/javascript" src="scripts.js"></script>
   </head>
 
   <body>
-
+    
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
@@ -45,54 +50,20 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Categories</li>
-              <li class="active"><a href="#"><i class="icon-pencil"></i>Text</a></li>
-              <li><a href="#"><i class="icon-picture"></i> Image</a></li>
-              <li><a href="#"><i class="icon-music"></i>  Audio</a></li>
-              <li><a href="#"><i class="icon-facetime-video"></i>Video</a></li>
-              <li><a href="#"><i class="icon-bookmark"></i>Link</a></li>
+              <li><a id="clipx-text" href="#"><i class="icon-pencil"></i>Text</a></li>
+              <li><a id="clipx-image" href="#"><i class="icon-picture"></i> Image</a></li>
+              <li><a id="clipx-audio" href="#"><i class="icon-music"></i>  Audio</a></li>
+              <li><a id="clipx-video" href="#"><i class="icon-facetime-video"></i>Video</a></li>
+              <li><a id="clipx-link" href="#"><i class="icon-bookmark"></i>Link</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
-        <div class="span9">
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
+        <div class="span9 ">
         </div><!--/span-->
       </div><!--/row-->
 
       
 
     </div><!--/.fluid-container-->
-<footer id="footer">
-        <p>&copy; Company 2013</p>
-      </footer>
   </body>
 </html>
